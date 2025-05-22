@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  },
+  "name": "npm-project",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.1"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NgirfanulMangali/npm-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NgirfanulMangali/npm-project/issues"
+  },
+  "homepage": "https://github.com/NgirfanulMangali/npm-project#readme"
+}
