@@ -7,15 +7,16 @@
   font-weight: 800px;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   display: flex;
 }
 
-#timezone {
+#country {
   font-size: 30px;
   font-weight: 600px;
   justify-content: center;
   align-items: center;
-  padding-top: 300px;
+  padding-top: 200px;
   display: flex;
 }
 
@@ -26,12 +27,93 @@
   font-weight: 800;
   display: flex;
 }
+
+#edit {
+  position: relative;
+  bottom: 70px;
+  left: 1100px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal__overlay {
+  background: #0009;
+  position: fixed;
+  inset: 0;
+}
+
+.modal__container {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 10% auto;
+  padding: 2rem;
+}
+
+.close {
+  position: relative;
+  left: 400px;
+}
+
+.apply {
+  background-color: #7fffd4;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  bottom: 10px;
+  left: 300px;
+}
+
+#timezone {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  bottom: 20px;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 800;
+}
 </style>
 </head>
 <body>
-    <p id="timezone"></p>
-    <p id="timeNow"></p>
-    <p id="date"></p>
+
+        <p id="country"></p>
+        <img src="/edit.6f6af89e.svg" alt="edit icon" id="edit" data-micromodal-trigger="modal-1">
+        <p id="timeNow"></p>
+        <p id="date"></p>
+  
+
+        <div class="modal" id="modal-1" aria-hidden="true">
+            <div class="modal__overlay" data-micromodal-close="">
+              <div class="modal__container">
+                <p class="text">Change Timezone</p>
+                <form id="timezone-form">
+                    <select id="timezone" name="timezone">
+                      <option value="Asia/Jakarta">Asia/Jakarta</option>
+                      <option value="Asia/Makassar">Asia/Makassar</option>
+                      <option value="Asia/Jayapura">Asia/Jayapura</option>
+                      <option value="America/New_York">America/New_York</option>
+                      <option value="Europe/London">Europe/London</option>
+                      <option value="UTC">UTC</option>
+                    </select>
+
+                <button class="apply">Aplly</button>
+                <img src="/close.6ee707d1.svg" alt="close icon" data-micromodal-close="" class="close">
+                
+              </form></div>
+            </div>
+          </div>
+          
+    
+        
     <script type="module" src="/npm-project.1fcc916e.js"></script>
 
 </body></html>

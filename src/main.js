@@ -1,4 +1,9 @@
 import dayjs from 'dayjs';
+import MicroModal from 'micromodal';
+
+MicroModal.init();
+
+
 
 function updateTime() {
     const currentTime = dayjs().format('h:mm:ss A')
@@ -9,7 +14,10 @@ updateTime();
 setInterval(updateTime, 1000);
 
 const timeZoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
-document.getElementById("timezone").textContent = timeZoneName;
+document.getElementById("country").textContent = timeZoneName;
 
 const dateUser = dayjs().format("dddd,D MMMM,YYYY")
 document.getElementById("date").textContent = dateUser;
+
+
+document.getElementById("edit")

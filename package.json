@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "dayjs": "^1.11.13"
+    "dayjs": "^1.11.13",
+    "micromodal": "^0.6.1"
   },
   "name": "npm-project",
   "version": "1.0.0",
