@@ -10,9 +10,9 @@
     "parcel": "^2.15.1"
   },
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "preview": "parcel preview"
+    "start": "vercel index.html",
+    "build": "vercel build index.html",
+    "preview": "vercel preview"
   },
   "repository": {
     "type": "git",
