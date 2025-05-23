@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "preview": "parcel preview"
   },
   "repository": {
     "type": "git",
